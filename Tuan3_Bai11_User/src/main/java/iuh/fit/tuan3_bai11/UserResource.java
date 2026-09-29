@@ -7,6 +7,7 @@ import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
 
+import javax.print.attribute.standard.Media;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,11 +35,12 @@ public class UserResource {
     return a+b;
 }
 
-@GET
-@Produces(MediaType.APPLICATION_JSON)
-public Response getAllUsers(){
-        return Response.ok(userList).build();
-}
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllUsers(){
+            return Response.ok(userList).build();
+    }
+
     // GET
     @GET
     @Path("/{id}")

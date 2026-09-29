@@ -35,8 +35,7 @@ initial-scale=1">
       <c:forEach items="${products}" var="product">
         <tr>
           <td>${product.name}</td>
-          <td><fmt:formatNumber value="${product.price}"
-                                type="currency" currencyCode="USD"/></td>
+          <td><fmt:formatNumber value="${product.price}" type="currency" currencyCode="USD"/></td>
           <td>
             <form method="post" action="${pageContext.request.contextPath}/cart/add">
               <input type="hidden" name="productId" value="${product.id}">
@@ -73,12 +72,9 @@ initial-scale=1">
 
     <p>
       <strong>Tổng tiền:</strong>
-      <fmt:formatNumber
-              value="${userSession.shoppingCart.total}" type="currency"
-              currencyCode="USD"/>
+      <fmt:formatNumber value="${userSession.shoppingCart.total}" type="currency" currencyCode="USD"/>
     </p>
-    <p class="technical">CDI session instance:
-      ${userSession.instanceId}</p>
+    <p class="technical">CDI session instance:${userSession.instanceId}</p>
 
     <div>
       <p>Số người đang online: <strong>${applicationScope.activeUsersCount - 1}</strong></p>
