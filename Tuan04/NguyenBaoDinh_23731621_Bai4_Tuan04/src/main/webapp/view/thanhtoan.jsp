@@ -168,7 +168,6 @@
         </div>
 
         <div class="main-content">
-
             <div class="checkout-title">Checkout - Already registered?</div>
 
             <c:if test="${not empty error}">
@@ -176,9 +175,7 @@
             </c:if>
 
             <form action="${pageContext.request.contextPath}/checkout" method="post">
-
                 <table class="checkout-table">
-
                     <tr>
                         <td style="width: 180px;">Fullname:</td>
                         <td><input type="text" name="fullName" value="${param.fullName}" class="text-input" required></td>
@@ -215,6 +212,7 @@
                 </table>
             </form>
         </div>
+
     </div>
 
 </div>

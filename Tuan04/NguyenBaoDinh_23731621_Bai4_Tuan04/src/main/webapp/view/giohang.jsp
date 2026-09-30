@@ -225,7 +225,6 @@
                                 </form>
                             </td>
                         </tr>
-
                     </c:forEach>
 
                     <tr>
@@ -247,6 +246,7 @@
                 </div>
             </c:if>
         </div>
+
     </div>
 
 </div>

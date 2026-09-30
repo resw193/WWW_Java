@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 30px auto;
+}
+
+.menu {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    margin: 0 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #999;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 400px;
+    padding: 5px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}

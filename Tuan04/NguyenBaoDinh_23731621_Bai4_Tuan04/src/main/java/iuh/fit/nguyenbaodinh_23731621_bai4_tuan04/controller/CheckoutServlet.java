@@ -28,6 +28,7 @@ public class CheckoutServlet extends HttpServlet {
             return;
         }
 
+        // Có item trong giỏ hàng (Cart) thì qua trang thanhtoan.jsp
         req.getRequestDispatcher("/view/thanhtoan.jsp").forward(req, resp);
     }
 
